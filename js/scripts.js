@@ -7,10 +7,18 @@ let pokemonList = [
   {name: "Weedle", height: 0.3, type: ['bug','poison']}
 ];
 
-for (let i=0; i < pokemonList.length; i++){ //loops through pokemonList
-  if (pokemonList[i].height > 0.6) { //finds tallest pokemon
-    document.write(pokemonList[i].name + " (height: " + pokemonList[i].height + ")" + " - Wow, that's big!" + "<br>");
+// for (let i=0; i < pokemonList.length; i++){ //loops through pokemonList
+//   if (pokemonList[i].height > 0.6) { //finds tallest pokemon
+//     document.write(pokemonList[i].name + " (height: " + pokemonList[i].height + ")" + " - Wow, that's big!" + "<br>");
+//   } else { //outputs other pokemon
+//     document.write(pokemonList[i].name + " (height: " + pokemonList[i].height + ")" + "<br>");
+//   }
+// }
+
+pokemonList.forEach(function(pokemon) {
+  if (pokemon.height > 0.6) { //finds tallest pokemon
+    document.write("<p>" + pokemon.name + " (height: " + pokemon.height + ")" + " - Wow, that's big!" + "</p>");
   } else { //outputs other pokemon
-    document.write(pokemonList[i].name + " (height: " + pokemonList[i].height + ")" + "<br>");
+    document.write("<p>" + pokemon.name + " (height: " + pokemon.height + ")" + "</p>");
   }
-}
+});
