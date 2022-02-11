@@ -67,11 +67,11 @@ let pokemonRepository = (function () {
   }
 
   function showLoadingMessage() {
-    document.querySelector('.pokemon-list').append('Loading pokemon...');
+    document.querySelector('.loading').innerText = 'Loading pokemon...';
   }
 
   function hideLoadingMessage() {
-    document.querySelector('.pokemon-list').firstChild.remove();
+    document.querySelector('.loading').innerText = '';
   }
 
   return {
