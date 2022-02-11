@@ -29,7 +29,7 @@ let pokemonRepository = (function () {
     return fetch(apiUrl).then(function (response) {
       return response.json();
     }).then(function (json) {
-      hideLoadingMessage()
+      hideLoadingMessage();
       json.results.forEach(function (item) {
         let pokemon = {
           name: item.name,
@@ -38,7 +38,7 @@ let pokemonRepository = (function () {
         add(pokemon);
       });
     }).catch(function (e) {
-      hideLoadingMessage()
+      hideLoadingMessage();
       console.error(e);
     })
   }
@@ -49,13 +49,13 @@ let pokemonRepository = (function () {
     return fetch(url).then(function (response) {
       return response.json();
     }).then(function (details) {
-      hideLoadingMessage()
+      hideLoadingMessage();
       // Now we add the details to the item
       item.imageUrl = details.sprites.front_default;
       item.height = details.height;
       item.types = details.types;
     }).catch(function (e) {
-      hideLoadingMessage()
+      hideLoadingMessage();
       console.error(e);
     });
   }
@@ -73,7 +73,7 @@ let pokemonRepository = (function () {
   function hideLoadingMessage() {
     document.querySelector('.pokemon-list').firstChild.remove();
   }
-  
+
   return {
     add: add,
     getAll: getAll,
