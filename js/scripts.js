@@ -12,7 +12,6 @@ let pokemonRepository = (function () {
   }
 
   function addListItem(pokemon) {
-
     let pokemonUl = $(".pokemon-list");
     let listItem = $("<li></li>");
     listItem.addClass("group-list-item");
@@ -96,7 +95,7 @@ let pokemonRepository = (function () {
     modalBody.append(heightElement);
     modalBody.append(weightElement);
   }
-  
+
   return {
     add: add,
     getAll: getAll,
