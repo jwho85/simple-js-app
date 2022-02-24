@@ -76,7 +76,7 @@ let pokemonRepository = (function () {
   function hideLoadingMessage() {
     $('.loading').empty();
   }
-  
+
   function showModal(pokemon) {
     let modalBody = $(".modal-body");
     let modalTitle = $(".modal-title");
@@ -96,7 +96,7 @@ let pokemonRepository = (function () {
     modalBody.append(heightElement);
     modalBody.append(weightElement);
   }
-
+  
   return {
     add: add,
     getAll: getAll,
