@@ -49,7 +49,7 @@ body {
   font-size: 40px;
 }
 
-.navbar-brand:hover {
+.navbar-brand:hover, .navbar-brand:focus {
   color: #a040a0 !important;
 }
 
