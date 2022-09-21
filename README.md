@@ -11,3 +11,10 @@ This is the first JavaScript app I have developed through Career Foundry. It pul
 <li>JavaScript</li>
 <li>jQuery</li>
 </ul>
+
+## Get Started
+
+<ul>
+<li>Clone the project</li>
+<li>Open index.html</li>
+</ul>
